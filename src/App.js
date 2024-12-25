@@ -1,16 +1,15 @@
 import React from "react";
+import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-import Adv from "./components/Adv";
+import Reward from "./components/Reward";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Adv />
-      <hr />
-      <div className="mt-3">
-        <Main />
+    <div className="max-h-screen flex max-w-screen overflow-hidden">
+      <Sidebar />
+      <div className="flex flex-col flex-1 overflow-auto">
+        <Navbar />
+        <Reward />
       </div>
     </div>
   );
